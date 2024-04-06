@@ -294,6 +294,9 @@ footer:hover {
     font-size: 14px;
     width: auto;
   }
+  .tab h2{
+    font-size: 18px;
+  }
   .home img {
     margin-right: 5px;
   }
@@ -319,7 +322,10 @@ footer:hover {
     gap: 2rem;
   }
   .cards {
-    max-width: 250px;
+    max-width: 230px;
+  }
+  .Academics h1 {
+    font-size: 20px;
   }
 }
 @media (max-width: 430px){
@@ -331,5 +337,8 @@ footer:hover {
   .tab table td {
     font-size: 10px;
     width: auto;
+  }
+  .tabh2{
+    font-size: 12px;
   }
 }
