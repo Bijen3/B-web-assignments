@@ -92,13 +92,9 @@ nav a:hover {
   height: auto;
   display: block;
   margin: 0 auto;
-  /* opacity: 80%; */
   transition: all ease 0.7s;
   border-bottom: 1px solid white;
 }
-/* .image img:hover {
-  opacity: 1;
-} */
 .Academics h1 {
   color: white;
   justify-content: center;
@@ -295,7 +291,8 @@ footer:hover {
   }
   .tab table tr,
   .tab table td {
-    font-size: 15px;
+    font-size: 14px;
+    width: auto;
   }
   .home img {
     margin-right: 5px;
@@ -308,7 +305,7 @@ footer:hover {
     height: 35px;
   }
   nav{
-    height: 7vw;
+    height: 9vw;
   }
   nav li {
     display: inline-block;
@@ -318,10 +315,21 @@ footer:hover {
     padding: 10px;
   }
   .main{
-    height: 260vw;
+    height: 300vw;
     gap: 2rem;
   }
   .cards {
     max-width: 250px;
+  }
+}
+@media (max-width: 430px){
+  .tab,
+  .login{
+    width: 100%;
+  }
+  .tab table tr,
+  .tab table td {
+    font-size: 10px;
+    width: auto;
   }
 }
