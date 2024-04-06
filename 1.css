@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0d1717;
+  font-family: Georgia, serif;
+}
+.container {
+  background-color: #0d1717;
+  width: 100vw;
+  overflow: hidden;
+}
+.home {
+  background-color: #0d1717;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  border-bottom: 1px solid white;
+}
+
+.home img {
+  height: 70px;
+  cursor: pointer;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.name {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(173, 177, 191);
+  position: relative;
+  cursor: pointer;
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: rgba(75, 131, 168, 0.692);
+}
+
+.name:hover::after {
+  width: 100%;
+  transition: all ease 1s;
+}
+
+nav {
+  background-color: #0d1717;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: red;
+  transition: all ease 0.6s;
+  cursor: pointer;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: all ease 0.7s;
+  border-bottom: 1px solid white;
+}
+.Academics h1 {
+  color: white;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 27px;
+  transition: all ease 0.5s;
+}
+.Academics h1:hover {
+  color: #49cbbe;
+}
+.main {
+  /* padding: 3rem; */
+  height: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  border-bottom: 1px solid white;
+}
+.cards {
+  /* width: calc(33.33% - 2rem); */
+  max-width: 250px;
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  box-shadow: 8px 9px 10px rgba(209, 195, 195, 0.832);
+  transition: all ease 0.6s;
+}
+.cards:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.card-image {
+  /* height: 245px; */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.card-image img {
+  max-width: 100%;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.cards h2 {
+  font-family: Georgia, serif;
+  /* margin-top: 1rem; */
+  font-size: 15px;
+  color: rgb(34, 17, 117);
+  text-align: center;
+}
+.back {
+  position: relative;
+  height: 80px;
+  padding: 1.5rem 0;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem;
+  border-bottom: 1px solid white;
+}
+
+.tab,
+.login {
+  /* background-color: #333; */
+  color: black;
+  border-radius: 18px;
+  padding: 1rem;
+}
+.tab {
+  flex: 1 0 auto;
+  width: 400px;
+  background: rgb(70,146,185);
+  background: radial-gradient(circle, rgba(70,146,185,1) 0%, rgba(73,105,149,0.8240546218487395) 100%);
+}
+.login {
+  flex: 1 0 auto;
+  width: 400px;
+  background: rgb(14,51,109);
+  background: linear-gradient(90deg, rgb(159, 185, 57) 20%, rgb(68, 157, 165) 60%, rgb(127, 152, 190) 92%);
+}
+.tab h2,
+.login h2 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tab table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 450px;
+}
+
+.tab table tr,
+.tab table td {
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 12px;
+  border-style: outset;
+  background: rgb(70,146,185);
+  background: radial-gradient(circle, rgba(70,146,185,1) 0%, rgba(73,105,149,0.8240546218487395) 100%);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  margin-left: 0.5rem;
+  color: black;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  height: 40px;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 1px solid white;
+  background: rgb(14,51,109);
+  background: linear-gradient(90deg, rgb(159, 185, 57) 20%, rgb(68, 157, 165) 60%, rgb(127, 152, 190) 92%);
+  color: black;
+  font-size: 15px;
+  box-shadow: 0px 0px 25px rgba(198, 193, 193, 0.849);
+  outline: none;
+}
+
+.form-group textarea {
+  height: 80px;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #1976d2;
+  color: orange;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all ease 0.5s;
+  margin-top: 10px;
+  box-shadow: 0px 0px 8px #1976d2;
+}
+
+button:hover {
+  background-color: rgb(189, 134, 31);
+  color: #1976d2;
+  box-shadow: 0px 0px 8px rgb(189, 134, 31);
+}
+
+.register {
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register p {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 16px;
+}
+footer {
+  color: #c0d2b2;
+  text-align: center;
+  height: 45px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  padding: 5px;
+  background-color: #0d1717;
+  font-size: 20px;
+  opacity: 0.4;
+}
+footer:hover {
+  opacity: 1;
+  transition: all ease 0.7s;
+  cursor: pointer;
+}
+/* For Mobile Screen */
+@media (max-width: 768px) {
+  .tab,
+  .login {
+    width: 350px;
+  }
+  .tab table tr,
+  .tab table td {
+    font-size: 14px;
+    width: 350px;
+  }
+  .tab h2,
+  .login h2{
+    font-size: 20px;
+  }
+  .home img {
+    margin-right: 5px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 14px;
+    height: 35px;
+  }
+  nav{
+    height: 9vw;
+  }
+  nav li {
+    display: inline-block;
+  }
+  nav a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .main{
+    height: 300vw;
+    gap: 2rem;
+  }
+  .cards {
+    max-width: 230px;
+  }
+  .Academics h1 {
+    font-size: 20px;
+  }
+}
